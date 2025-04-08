@@ -1,0 +1,202 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f5f5f5;
+    color: black;
+  }
+  
+  .navbar {
+    background-color: silver;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+  }
+  
+  .navbar h1 {
+    font-size: 24px;
+  }
+  
+  .navbar ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+  }
+  
+  .navbar a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+  }
+  
+  .hero {
+    background-color: white;
+    text-align: center;
+    padding: 60px 20px;
+  }
+  
+  .hero h2 {
+    font-size: 32px;
+    margin-bottom: 10px;
+  }
+  
+  .services {
+    padding: 40px 20px;
+    background-color: #f0f0f0;
+  }
+  
+  .services h3 {
+    text-align: center;
+    font-size: px;
+    margin-bottom: 20px;
+  }
+  
+  .service-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    max-width: 1000px;
+    margin: auto;
+  }
+  
+  
+    .card {
+      position: relative;
+      cursor: pointer;
+      transition: background 0.3s ease;
+      background-color: green;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px black (0,0,0,0.1);
+    text-align: center;
+    font-weight: bold;
+    }
+    
+    .card:hover {
+      background-color: #e9e9e9;
+    }
+    
+    .details {
+      display: none;
+      margin-top: 10px;
+      font-size: 14px;
+      color: black;
+    }
+    .card.active .details {
+      display: block;
+    }
+  
+  
+  .inquiry {
+    padding: 40px 20px;
+    background-color: green;
+  }
+  
+  .inquiry h3 {
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 30px;
+  }
+  
+  form {
+    max-width: 500px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  form input,
+  form textarea {
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    width: 100%;
+  }
+  
+  form button {
+    background-color: #0000ff;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+  }
+  
+  form button:hover {
+    background-color: darkgreen;
+  }
+  
+    
+  .contact {
+    padding: 30px 20px;
+    background-color: #f9f9f9;
+    text-align: center;
+  }
+  
+  .contact a {
+    color: purple;
+    font-weight: bold;
+    text-decoration: none;
+  }
+  
+  .footer {
+    background-color: green;
+    color: white;
+    text-align: center;
+    padding: 15px;
+  }
+
+  #starsCanvas {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    width: 100vw;
+    height: 100vh;
+    background: black;
+ }
+ @media (max-width: 768px) {
+  .service-list {
+    grid-template-columns: 1fr;
+  }
+  .navbar ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
+.testimonial-carousel {
+  overflow: hidden;
+  position: relative;
+  max-width: 700px;
+  margin: auto;
+}
+
+.testimonial-track {
+  display: flex;
+  transition: transform 0.6s ease-in-out;
+}
+
+.testimonial-card {
+  min-width: 100%;
+  box-sizing: border-box;
+  padding: 30px;
+  background-color: #f8f8f8;
+  border-left: 5px solid green;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+}
+
+.testimonial-card p {
+  font-style: italic;
+  color: #555;
+}
+
+.testimonial-card h4 {
+  margin-top: 15px;
+  font-weight: bold;
+  color: #333;
+}

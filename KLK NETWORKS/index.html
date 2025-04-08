@@ -1,0 +1,133 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>MKM ONLINE CYBER</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
+</head>
+<body>
+<canvas id="starsCanvas"></canvas>
+
+  <!-- Navigation -->
+  <nav class="navbar">
+    <h1>MKM ONLINE CYBER</h1>
+    <ul>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#inquiry">Inquiry</a></li>
+      <li><a href="#contact">Contact Us</a></li>
+    </ul>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <h2>All Online Cyber Services at Your Comfort</h2>
+    <p>From applications, document editing, poster design, WiFi setup, to government services and more.</p>
+  </section>
+
+  <!-- Services Section -->
+  <section id="services" class="services">
+    <h3>Our Services</h3>
+    <div class="service-list">
+  
+      <div class="card" onclick="toggleDetails(this)">
+        Online Applications
+        <div class="details">We assist with job, school, and government online applications.</div>
+      </div>
+  
+      <div class="card" onclick="toggleDetails(this)">
+        Document Editing
+        <div class="details">Professional formatting, proofreading, and document cleanup.</div>
+      </div>
+  
+      <div class="card" onclick="toggleDetails(this)">
+        Poster Making
+        <div class="details">We design clean, eye-catching posters for any purpose.</div>
+      </div>
+      <div class="card" data-aos="fade-up">WiFi Installation</div>
+      <div class="card" onclick="toggleDetails(this)">
+          WIFI Installation
+          <div class="details">We install personnal and billing system WIFI from 30-60 mbps</div>
+        </div>
+        <div class="card" onclick="toggleDetails(this)">
+          Frontend web Development
+          <div class="details">We build simple & captivating websites for personnal and business brands</div>
+        </div>
+          <div class="card" onclick="toggleDetails(this)">
+            KRA Services
+            <div class="details">KRA Pin Application,Pin retreaval,Email change,Password change,filing returns</div>
+          </div>
+            <div class="card" onclick="toggleDetails(this)">
+              E-citizen Services
+              <div class="details"> All Government services e.g Certificate of Good Conduct Application etc </div>
+            </div>
+            <div class="card">More on Request</div>
+          </div>     
+      
+  </section>
+
+  <!-- Inquiry Form -->
+  <section id="inquiry" class="inquiry">
+    <h3>Send an Inquiry</h3>
+    <form
+  action="https://formspree.io/f/mwplrjyl"
+  method="POST"
+>
+  <label>
+    Your email:
+    <input type="email" name="email">
+  </label>
+  <label>
+    Your message:
+    <textarea name="message"></textarea>
+  </label>
+  <!-- your other form fields go here -->
+  <button type="submit">Send</button>
+</form>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="contact">
+    <h3>Contact Us</h3>
+    <p>Email: <a href="mailto:mkmonlinecyber@gmail.com">mkmonlinecyber@gmail.com</a></p>
+    <p>WhatsApp: <a href="https://wa.me/254791398996" target="_blank">Chat with us</a></p>
+  </section>
+  <section class="testimonials" id="testimonials">
+    <h3>What Our Clients Say</h3>
+    <div class="testimonial-carousel">
+      <div class="testimonial-track">
+  
+        <div class="testimonial-card">
+          <p>"MKM Online Cyber helped me apply for my passport within minutes — no stress at all!"</p>
+          <h4>- James N.</h4>
+        </div>
+  
+        <div class="testimonial-card">
+          <p>"I needed a poster for my event, and they delivered something super professional the same day!"</p>
+          <h4>- Mercy W.</h4>
+        </div>
+  
+        <div class="testimonial-card">
+          <p>"Their KRA and e-Citizen support is top-notch. I didn’t even need to leave the house."</p>
+          <h4>- Brian K.</h4>
+        </div>
+  
+      </div>
+    </div>
+  </section>
+      <div class="testimonial-card" data-aos="fade-up">
+
+  
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>&copy; 2025 MKMONLINE CYBER. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
